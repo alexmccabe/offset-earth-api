@@ -1,5 +1,20 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installation
+
+Clone the repository to your desired directory.
+
+```
+git clone git@github.com:alexmccabe/offset-earth-api.git
+```
+
+Once cloned, navigate to the directory and install dependencies
+
+```sh
+yarn
+# or npm install
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
