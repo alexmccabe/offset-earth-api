@@ -42,7 +42,7 @@ class ApiService {
   _createAxiosInstance() {
     const baseUrl = 'https://api.offset.earth';
 
-    return axios.create({ baseUrl });
+    return axios.create({ baseURL: baseUrl });
   }
 }
 
