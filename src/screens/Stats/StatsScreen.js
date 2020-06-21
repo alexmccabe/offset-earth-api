@@ -27,17 +27,20 @@ const StatsScreen = () => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.statsScreen}>
       <Header />
-      <Loader isVisible={isLoading} />
 
-      {showError && (
-        <ErrorMessage>
-          Oops! Looks like we were unable to fetch the data.
-        </ErrorMessage>
-      )}
+      <main className={styles.content}>
+        <Loader className={styles.loader} isVisible={isLoading} />
 
-      {!showError && <Chart />}
+        {showError && (
+          <ErrorMessage>
+            Oops! Looks like we were unable to fetch the data.
+          </ErrorMessage>
+        )}
+
+        {!showError && <Chart />}
+      </main>
     </div>
   );
 };
