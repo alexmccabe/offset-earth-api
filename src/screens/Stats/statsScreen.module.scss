@@ -7,3 +7,11 @@
     margin-right: auto;
     max-width: 500px;
 }
+
+.tooltip {
+    background-color: #fff;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}

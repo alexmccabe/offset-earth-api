@@ -36,7 +36,7 @@ class ApiService {
    * @returns {Array}
    */
   fetchAllPlanted() {
-    return this._axios.get('/trees');
+    return this._axios.get('/trees').then(data => data.data);
   }
 
   _createAxiosInstance() {
